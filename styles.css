@@ -1261,3 +1261,108 @@ footer { padding: 54px 0 28px; background: #0d0f0b; }
 
 
 .hero h1,.hero-title{font-size:clamp(2.6rem,5vw,4.6rem)!important;line-height:1.05;}
+
+
+/* v2.0.7 compact desktop landing hero: keep metrics visible on initial load */
+@media (min-width: 901px) {
+  .hero {
+    min-height: auto !important;
+  }
+
+  .hero-content {
+    padding-top: 76px !important;
+    padding-bottom: 24px !important;
+    gap: 20px !important;
+  }
+
+  .hero-copy {
+    max-width: 760px;
+  }
+
+  .hero-inline-logo,
+  .hero-wide-logo {
+    max-height: 105px !important;
+    width: auto !important;
+    margin-bottom: 6px !important;
+  }
+
+  .hero-logo-picture {
+    width: min(500px, 44vw) !important;
+    margin-bottom: 6px !important;
+  }
+
+  .kicker {
+    margin-bottom: 7px !important;
+    font-size: .78rem !important;
+  }
+
+  .hero-copy h1,
+  .hero h1,
+  .hero-title {
+    font-size: clamp(2.15rem, 3.8vw, 3.65rem) !important;
+    line-height: .98 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero-text {
+    max-width: 720px !important;
+    margin-bottom: 8px !important;
+    font-size: .93rem !important;
+    line-height: 1.42 !important;
+  }
+
+  .hero-cta-copy {
+    margin-bottom: 0 !important;
+    font-size: .86rem !important;
+    line-height: 1.35 !important;
+  }
+
+  .hero-actions {
+    margin-top: 13px !important;
+    gap: 10px !important;
+  }
+
+  .hero-actions .button {
+    min-height: 42px !important;
+    padding: 10px 15px !important;
+    font-size: .82rem !important;
+  }
+
+  .stats-strip,
+  .stats-bar,
+  .metric-strip {
+    position: relative;
+    z-index: 5;
+  }
+}
+
+/* Extra compression for common laptop-height viewports */
+@media (min-width: 901px) and (max-height: 850px) {
+  .hero-content {
+    padding-top: 64px !important;
+    padding-bottom: 18px !important;
+  }
+
+  .hero-logo-picture {
+    width: min(440px, 40vw) !important;
+  }
+
+  .hero-inline-logo,
+  .hero-wide-logo {
+    max-height: 88px !important;
+  }
+
+  .hero-copy h1,
+  .hero h1,
+  .hero-title {
+    font-size: clamp(2rem, 3.5vw, 3.3rem) !important;
+  }
+
+  .hero-text {
+    font-size: .88rem !important;
+  }
+
+  .hero-actions {
+    margin-top: 10px !important;
+  }
+}
