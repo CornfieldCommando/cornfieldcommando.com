@@ -1,9 +1,6 @@
-http://cornfieldcommando.com/* https://cornfieldcommando.com/:splat 301!
-http://www.cornfieldcommando.com/* https://cornfieldcommando.com/:splat 301!
-https://www.cornfieldcommando.com/* https://cornfieldcommando.com/:splat 301!
-/about /about.html 301
-/portfolio /portfolio.html 301
-/partners /partners.html 301
-/contact /contact.html 301
-/thank-you.html /thank-you/ 301!
-/thank-you /thank-you/ 301!
+/about /about.html 200
+/portfolio /portfolio.html 200
+/partners /partners.html 200
+/contact /contact.html 200
+/thank-you /thank-you/index.html 200
+/thank-you/ /thank-you/index.html 200
