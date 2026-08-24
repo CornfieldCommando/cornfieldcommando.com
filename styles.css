@@ -1684,3 +1684,123 @@ footer { padding: 54px 0 28px; background: #0d0f0b; }
     min-height: 120px !important;
   }
 }
+
+
+
+/* v2.3.0 Greyhive launch integration */
+.greyhive-launch {
+  width: min(520px, 100%);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 16px 0 4px;
+  padding: 11px 16px 11px 12px;
+  border: 1px solid rgba(201, 176, 112, .72);
+  border-radius: 14px;
+  background: linear-gradient(90deg, rgba(0,0,0,.78), rgba(29,28,22,.76));
+  color: var(--cream);
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(0,0,0,.22);
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.greyhive-launch:hover {
+  transform: translateY(-2px);
+  border-color: #c9b070;
+  background: linear-gradient(90deg, rgba(0,0,0,.9), rgba(46,42,31,.88));
+}
+
+.greyhive-launch-icon {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(0,0,0,.42);
+}
+
+.greyhive-launch-icon picture,
+.greyhive-launch-icon img {
+  display: block;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.greyhive-launch-copy {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  gap: 2px 9px;
+}
+
+.greyhive-launch-copy small {
+  color: #c9b070;
+  font-size: .7rem;
+  font-weight: 900;
+  letter-spacing: .16em;
+}
+
+.greyhive-launch-copy strong {
+  color: #c9b070;
+  font-size: 1.22rem;
+  letter-spacing: .04em;
+}
+
+.greyhive-launch-cta {
+  grid-column: 1 / -1;
+  margin-top: 2px;
+  color: var(--cream);
+  font-size: .78rem;
+  font-weight: 800;
+}
+
+/* Reusable Greyhive social icon */
+.greyhive-social-icon {
+  width: 25px;
+  height: 25px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+}
+
+.greyhive-social-icon picture,
+.greyhive-social-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Match existing social-link visual treatment */
+.social-link-greyhive .greyhive-social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-social-link .greyhive-social-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.dock-greyhive .greyhive-social-icon {
+  width: 34px;
+  height: 34px;
+}
+
+@media (max-width: 760px) {
+  .greyhive-launch {
+    width: 100%;
+    margin-top: 12px;
+  }
+  .greyhive-launch-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .greyhive-launch-icon picture,
+  .greyhive-launch-icon img {
+    width: 40px;
+    height: 40px;
+  }
+}
