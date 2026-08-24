@@ -7,4 +7,9 @@
 <url><loc>https://cornfieldcommando.com/contact.html</loc></url>
 <url><loc>https://cornfieldcommando.com/videos/level-4-plate-test.html</loc></url>
 <url><loc>https://cornfieldcommando.com/videos/machine-guns.html</loc></url>
+  <url>
+    <loc>https://cornfieldcommando.com/affiliates</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
