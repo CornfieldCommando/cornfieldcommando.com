@@ -1,0 +1,3 @@
+/go/goa -> GOA AvantLink
+/go/battlehawk -> Battlehawk Armory AvantLink
+/go/opticsplanet -> OpticsPlanet AvantLink
