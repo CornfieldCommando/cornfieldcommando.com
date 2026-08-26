@@ -1,0 +1,11 @@
+/*.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/affiliates
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/partners
+  Cache-Control: no-cache, no-store, must-revalidate
