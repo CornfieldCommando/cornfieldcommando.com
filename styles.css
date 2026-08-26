@@ -1822,3 +1822,66 @@ footer { padding: 54px 0 28px; background: #0d0f0b; }
     display: flex;
   }
 }
+
+
+/* v2.3.6 larger partner logos */
+.proof-logo-item {
+  padding: 8px 8px 10px !important;
+  gap: 8px !important;
+}
+
+.proof-logo-item img {
+  width: 100% !important;
+  height: 82px !important;
+  max-width: 100% !important;
+  max-height: 82px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+.proof-partner-name {
+  margin-top: 2px;
+}
+
+/* Full partners page cards */
+.uniform-partner-card .partner-logo-box {
+  padding: 12px !important;
+}
+
+.uniform-partner-card .partner-logo-box img {
+  width: 100% !important;
+  height: 168px !important;
+  max-width: 100% !important;
+  max-height: 168px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Give wide logos more usable area inside the compact proof cards */
+.proof-logo-item img[src*="velocitas"],
+.proof-logo-item img[src*="fenix"],
+.proof-logo-item img[src*="tier1"],
+.proof-logo-item img[src*="stronghold"],
+.proof-logo-item img[src*="zulisy"] {
+  height: 88px !important;
+  max-height: 88px !important;
+}
+
+/* Let taller/square marks also grow without overflowing */
+.proof-logo-item img[src*="oakammo"],
+.proof-logo-item img[src*="deez"] {
+  height: 86px !important;
+  max-height: 86px !important;
+}
+
+@media (max-width: 700px) {
+  .proof-logo-item img {
+    height: 76px !important;
+    max-height: 76px !important;
+  }
+
+  .uniform-partner-card .partner-logo-box img {
+    height: 145px !important;
+    max-height: 145px !important;
+  }
+}
