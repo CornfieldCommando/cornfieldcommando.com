@@ -41,3 +41,41 @@ if (partnershipForm) {
     }
   });
 }
+
+
+
+/* v2.3.3 mobile navigation behavior */
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".nav-toggle").forEach((toggle) => {
+    const nav = toggle.closest(".nav");
+    if (!nav) return;
+    const links = nav.querySelector(".nav-links");
+    if (!links) return;
+
+    links.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+
+    const setOpen = (open) => {
+      links.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    };
+
+    toggle.addEventListener("click", (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      setOpen(!links.classList.contains("is-open"));
+    });
+
+    links.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => setOpen(false));
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!nav.contains(event.target)) setOpen(false);
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 900) setOpen(false);
+    });
+  });
+});
