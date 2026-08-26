@@ -1885,3 +1885,19 @@ footer { padding: 54px 0 28px; background: #0d0f0b; }
     max-height: 145px !important;
   }
 }
+
+
+/* v2.4.0 affiliates + GOA membership */
+.affiliate-section-heading{margin:34px 0 18px}.affiliate-section-heading h2{margin:0;font-size:clamp(1.8rem,3vw,3rem)}
+.affiliate-split-divider{height:1px;margin:48px 0 10px;background:linear-gradient(90deg,transparent,rgba(214,186,94,.65),transparent)}
+.discount-grid,.affiliate-links-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.affiliate-card h3{margin:4px 0 8px;font-size:clamp(1.6rem,2.4vw,2.45rem)}
+.affiliate-banner{width:100%;min-height:170px;display:grid;place-items:center;margin-bottom:18px;overflow:hidden;border-radius:12px;background:rgba(0,0,0,.48)}
+.affiliate-banner img{display:block;width:100%;max-height:240px;object-fit:contain}.affiliate-link-card .button{margin-top:14px}
+.goa-membership-section{position:relative;overflow:hidden;border-top:1px solid rgba(214,186,94,.18);border-bottom:1px solid rgba(214,186,94,.18);background:radial-gradient(circle at 12% 45%,rgba(214,186,94,.12),transparent 32%),rgba(8,11,7,.72)}
+.goa-membership-grid{display:grid;grid-template-columns:minmax(240px,.75fr) minmax(0,1.5fr);gap:clamp(32px,5vw,74px);align-items:center}
+.goa-membership-visual{min-height:360px;display:grid;place-items:center;padding:20px}.goa-membership-visual img{width:min(100%,390px);max-height:390px;object-fit:contain}
+.goa-membership-copy h2{margin:0 0 18px;font-size:clamp(2.3rem,4.6vw,4.9rem);line-height:1}
+.goa-win-list{margin:22px 0;padding:0;list-style:none;display:grid;gap:10px}.goa-win-list li{position:relative;padding-left:22px}.goa-win-list li::before{content:"•";position:absolute;left:0;color:var(--corn);font-weight:900}
+.goa-legal-note{opacity:.72;font-size:.8rem;margin:14px 0 22px}
+@media(max-width:900px){.discount-grid,.affiliate-links-grid{grid-template-columns:1fr}.goa-membership-grid{grid-template-columns:1fr}.goa-membership-visual{min-height:220px}.goa-membership-visual img{width:min(72vw,330px)}}
