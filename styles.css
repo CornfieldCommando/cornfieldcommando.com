@@ -1901,3 +1901,13 @@ footer { padding: 54px 0 28px; background: #0d0f0b; }
 .goa-win-list{margin:22px 0;padding:0;list-style:none;display:grid;gap:10px}.goa-win-list li{position:relative;padding-left:22px}.goa-win-list li::before{content:"•";position:absolute;left:0;color:var(--corn);font-weight:900}
 .goa-legal-note{opacity:.72;font-size:.8rem;margin:14px 0 22px}
 @media(max-width:900px){.discount-grid,.affiliate-links-grid{grid-template-columns:1fr}.goa-membership-grid{grid-template-columns:1fr}.goa-membership-visual{min-height:220px}.goa-membership-visual img{width:min(72vw,330px)}}
+
+/* v2.4.9 five-stat landing metrics */
+@media (min-width: 901px) {
+  .stats-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .stats-strip .stat strong {
+    white-space: nowrap;
+  }
+}
