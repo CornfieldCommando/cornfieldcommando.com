@@ -1,0 +1,1 @@
+T.REX ARMS, Safariland, and Hold Up Displays currently use locally hosted typographic wordmark placeholders, NOT official logo artwork. Replace assets/*-wordmark.svg with approved official logos when supplied.
